@@ -10,9 +10,8 @@
 #include "structures.h"
 
 
-int add_student(FILE *fp, Student *student_array, int size, int max_size);
+int add_student(FILE *fp, Student **student_array, int size, int *max_size);
 void display_all_students(Student student_array[], int size);
-size_t get_id(Student *student_array, int size, int id);
 void update_student(FILE *fp, Student *student_array, int size);
 int delete_student(FILE *fp, Student *student_array, int size);
 void clear_buffer(void);
